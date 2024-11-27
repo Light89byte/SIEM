@@ -1,4 +1,4 @@
-<h1>Failed RDP to IP Geolocation Information</h1>
+<h1>Failed RDP to IP Geolocation Data</h1>
 
 
  
@@ -9,28 +9,29 @@
 </b>
 <br />
 <br />
-The script is used in this demo where I setup Azure Sentinel (SIEM) and connect it to a live virtual machine acting as a honey pot.
-We will observe live attacks (RDP Brute Force) from all around the world. I will use a custom PowerShell script to
-look up the attackers Geolocation information and plot it on an Azure Sentinel Map!
+This script utilizes Azure Sentinel, which is a SIEM, and connects to a live virtual machine, working as a honey pot to capture data from all over the world.
+We will observe mostly live RDP Brute Force attacks attempting to break-in to my machine through intrusion. I have used a custom PowerShell script to
+look up the attackers Geolocation information and mark it on an Azure Sentinel Map!
 <br />
 <br />
 
 <p align="center">
   
-![]()
+![image_alt](https://i.imgur.com/s3yUNo7.png)
 </p>
 <h2>Languages Used</h2>
 
-- <b>PowerShell:</b> Extract RDP failed logon logs from Windows Event Viewer 
+- <b>PowerShell:</b> Extracting RDP failed logons from Windows Event Viewer 
 
 <h2>Utilities Used</h2>
 
 - <b>ipgeolocation.io:</b> IP Address to Geolocation API
 
-<h2>Attacks from China coming in; Custom logs being output with geodata</h2>
+<h2>Attacks from Ukraine coming in; Custom logs being output with geodata</h2>
 
 <p align="center">
-
+ 
+![image_alt](https://i.imgur.com/z4PXrqQ.png)
 </p>
 
 <h2>World map of incoming attacks after 24 hours (built custom logs including geodata)</h2>
